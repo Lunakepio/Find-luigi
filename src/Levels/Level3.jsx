@@ -48,7 +48,7 @@ export const Level3 = () => {
             columns.forEach((column) => {
                 const shouldGoUp = Math.random() < 0.5;
                 gsap.to(column, {
-                    y: shouldGoUp ? -500 : 50vi0,
+                    y: shouldGoUp ? -500 : 500,
                     duration: (Math.random() * 5) + 3,
                     yoyo: true,
                     ease: 'linear',
