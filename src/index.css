@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Super Mario 256';
+  user-select: none;
+}
+
+body {
+  background: black;
+
+}
+.screen{
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wanted {
+  width: 300px;
+  height: 300px;
+}
+
+.game-screen {
+  /* position: fixed; */
+  z-index: 2;
+  height:300px;
+  width:300px;
+  /* top: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  
+}
+
+.character {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width:32px;
+  height:32px;
+  .score-increase {
+    position: absolute;
+    color: #CF7473;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    z-index: 9999;
+  }
+  .blue{
+    color: #73b8cf;
+  }
+}
+
+.level-1 {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.level-2 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.level-3{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+
+.cell{
+  width:32px;
+  height:32px;
+}
